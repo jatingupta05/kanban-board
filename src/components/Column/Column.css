@@ -1,0 +1,51 @@
+/* Variables for common values */
+:root {
+    --spacing-small: 0.5rem;        /* Spacing used between elements */
+    --column-width: calc(20% - 1rem);  /* Width for kanban columns */
+    --flex-gap: var(--spacing-small);  /* Gap for flex items */
+  }
+  
+  /* Flexbox utility class */
+  .flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--flex-gap);
+  }
+  
+  /* Column title styling */
+  .column-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: var(--spacing-small);
+  }
+  
+  /* Kanban column width */
+  .kanban-column {
+    width: var(--column-width); /* Using the column width variable */
+  }
+    /* Responsive adjustments */
+    @media (max-width: 1200px) {
+      .kanban-column {
+        width: calc(25% - 1rem); /* Adjust for smaller screens */
+      }
+    }
+    
+    @media (max-width: 900px) {
+      .kanban-column {
+        width: calc(33.33% - 1rem); /* Adjust for smaller screens */
+      }
+    }
+    
+    @media (max-width: 600px) {
+      .kanban-column {
+        width: calc(50% - 1rem); /* Adjust for smaller screens */
+      }
+    }
+    
+    @media (max-width: 400px) {
+      .kanban-column {
+        width: calc(100% - 1rem); /* Adjust for smaller screens */
+      }
+    }

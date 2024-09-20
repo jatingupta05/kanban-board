@@ -1,0 +1,112 @@
+.flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+
+  .column-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: .5rem;
+  }
+
+  .kanban-column {
+    width: calc(20% - 1rem); 
+  }
+
+  
+  .board {
+    width: 98%;
+    display: flex;
+    gap: 1rem;
+    padding:0 1rem;
+  }
+  
+
+  
+  /* Ensure column headers are displayed properly */
+  .kanban-column h2 {
+    text-align: left;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #444;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Style for the subheader inside columns */
+  .kanban-column h2 span {
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+    color: #777;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+  }
+  
+  .card .heading {
+    color: #9a9a9b;
+  }
+  
+  .card .sub-heading {
+    color: #555;
+    margin-bottom: 0.5rem;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .feature {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    color: #888;
+    padding: 0.4rem;
+  }
+  
+  .feature .grey-circle {
+    width: 8px;
+    height: 8px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
+    .kanban-column {
+      width: calc(25% - 1rem); /* Adjust for smaller screens */
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .kanban-column {
+      width: calc(33.33% - 1rem); /* Adjust for smaller screens */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .kanban-column {
+      width: calc(50% - 1rem); /* Adjust for smaller screens */
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .kanban-column {
+      width: calc(100% - 1rem); /* Adjust for smaller screens */
+    }
+  }
+  
